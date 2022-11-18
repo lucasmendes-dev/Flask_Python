@@ -25,6 +25,11 @@ def login():
     form_login = FormLogin()
     form_criar_conta = FormCriarConta()
     
+    if form_login.validate_on_submit():
+        pass
+    if form_criar_conta.validate_on_submit():
+        pass
+        
     return render_template('login.html', form_login=form_login, form_criar_conta=form_criar_conta)
 
 
